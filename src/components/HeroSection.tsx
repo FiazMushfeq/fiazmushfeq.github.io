@@ -28,7 +28,6 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6 text-sm">
               <span>📧 fiazmushfeq01@gmail.com</span>
-              <span>📱 (609) 480-0980</span>
               <span>📍 Dayton, NJ</span>
             </div>
           </div>
