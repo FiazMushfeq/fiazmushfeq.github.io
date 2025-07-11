@@ -23,22 +23,22 @@ const SchoolSection = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-3 text-card-foreground">
                 <GraduationCap className="h-6 w-6 text-primary" />
-                Your University Name
+                University of Texas at Austin
               </CardTitle>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Calendar className="h-4 w-4" />
-                <span>Expected 2025</span>
+                <span>Expected November 2025</span>
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <h4 className="font-semibold text-card-foreground">Bachelor of Science in Computer Science</h4>
-                <p className="text-muted-foreground">GPA: 3.8/4.0</p>
+                <h4 className="font-semibold text-card-foreground">Postgraduate Certificate in Cybersecurity</h4>
+                <p className="text-muted-foreground">Online Program</p>
               </div>
               <div className="space-y-2">
                 <h5 className="font-medium text-card-foreground">Relevant Coursework:</h5>
                 <div className="flex flex-wrap gap-2">
-                  {['Data Structures', 'Algorithms', 'Software Engineering', 'Database Systems', 'Web Development', 'Machine Learning'].map((course) => (
+                  {['Containerization', 'Virtualization', 'Windows Server', 'Database Management', 'Cloud Computing'].map((course) => (
                     <Badge key={course} variant="secondary">{course}</Badge>
                   ))}
                 </div>
@@ -49,31 +49,32 @@ const SchoolSection = () => {
           <Card className="bg-card/90 backdrop-blur-sm border-border shadow-elevated">
             <CardHeader>
               <CardTitle className="flex items-center gap-3 text-card-foreground">
-                <Award className="h-6 w-6 text-primary" />
-                Academic Achievements
+                <GraduationCap className="h-6 w-6 text-primary" />
+                Rutgers University
               </CardTitle>
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <Calendar className="h-4 w-4" />
+                <span>Graduated January 2024</span>
+              </div>
             </CardHeader>
             <CardContent className="space-y-4">
+              <div>
+                <h4 className="font-semibold text-card-foreground">Bachelor of Science in Computer Science</h4>
+                <p className="text-muted-foreground">New Brunswick, NJ</p>
+              </div>
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                   <div>
-                    <h4 className="font-semibold text-card-foreground">Dean's List</h4>
-                    <p className="text-muted-foreground">Fall 2023, Spring 2024</p>
+                    <h4 className="font-semibold text-card-foreground">Strong Foundation</h4>
+                    <p className="text-muted-foreground">Comprehensive computer science curriculum</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                   <div>
-                    <h4 className="font-semibold text-card-foreground">CS Department Scholarship</h4>
-                    <p className="text-muted-foreground">Merit-based academic scholarship</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <div>
-                    <h4 className="font-semibold text-card-foreground">Programming Competition</h4>
-                    <p className="text-muted-foreground">2nd place in regional hackathon</p>
+                    <h4 className="font-semibold text-card-foreground">Academic Excellence</h4>
+                    <p className="text-muted-foreground">Focus on software engineering and cybersecurity</p>
                   </div>
                 </div>
               </div>

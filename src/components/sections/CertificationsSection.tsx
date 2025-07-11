@@ -10,34 +10,20 @@ const CertificationsSection = () => {
     {
       title: "AWS Certified Cloud Practitioner",
       issuer: "Amazon Web Services",
-      date: "March 2024",
-      credentialId: "ABC123456",
-      skills: ["Cloud Computing", "AWS Services", "Architecture"],
-      verified: true
+      date: "December 2024",
+      credentialId: "View on Credly",
+      skills: ["Cloud Computing", "AWS Services", "Architecture", "Security", "Pricing"],
+      verified: true,
+      credentialUrl: "https://credly.com/users/fiaz-mushfeq"
     },
     {
-      title: "Google IT Support Professional Certificate",
-      issuer: "Google",
-      date: "January 2024",
-      credentialId: "GGL789012",
-      skills: ["IT Support", "Troubleshooting", "Network Fundamentals"],
-      verified: true
-    },
-    {
-      title: "Meta Front-End Developer Certificate",
-      issuer: "Meta",
-      date: "December 2023",
-      credentialId: "META345678",
-      skills: ["React", "JavaScript", "UI/UX Design"],
-      verified: true
-    },
-    {
-      title: "CompTIA A+ Certification",
-      issuer: "CompTIA",
-      date: "November 2023",
-      credentialId: "COMP901234",
-      skills: ["Hardware", "Operating Systems", "Security"],
-      verified: true
+      title: "Scaled Agile Certified SAFe® 6 DevOps Practitioner",
+      issuer: "Scaled Agile",
+      date: "October 2024",
+      credentialId: "View on Credly",
+      skills: ["DevOps", "Agile", "CI/CD", "Lean Portfolio Management", "SAFe Framework"],
+      verified: true,
+      credentialUrl: "https://credly.com/users/fiaz-mushfeq"
     }
   ];
 
@@ -95,7 +81,12 @@ const CertificationsSection = () => {
                   </div>
                 </div>
 
-                <Button size="sm" variant="outline" className="w-full">
+                <Button 
+                  size="sm" 
+                  variant="outline" 
+                  className="w-full"
+                  onClick={() => window.open(cert.credentialUrl, '_blank')}
+                >
                   <ExternalLink className="mr-2 h-4 w-4" />
                   View Credential
                 </Button>

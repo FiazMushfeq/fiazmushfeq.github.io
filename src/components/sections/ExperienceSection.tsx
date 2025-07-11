@@ -7,28 +7,19 @@ import experienceBg from '@/assets/experience-bg.jpg';
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Software Engineering Intern",
-      company: "Tech Company Inc.",
-      location: "San Francisco, CA",
-      period: "Summer 2024",
-      description: "Developed and maintained web applications using React and Node.js. Collaborated with senior engineers on feature implementation and code reviews.",
-      technologies: ["React", "Node.js", "TypeScript", "AWS"]
-    },
-    {
-      title: "Frontend Developer",
-      company: "Startup Ventures",
-      location: "Remote",
-      period: "Part-time, 2023-2024",
-      description: "Built responsive user interfaces and improved website performance. Worked closely with designers to implement pixel-perfect designs.",
-      technologies: ["Vue.js", "Tailwind CSS", "JavaScript", "Git"]
-    },
-    {
-      title: "Teaching Assistant",
-      company: "University CS Department",
-      location: "Campus",
-      period: "Fall 2023",
-      description: "Assisted students with programming assignments and conducted lab sessions for Introduction to Programming course.",
-      technologies: ["Python", "Java", "Teaching", "Mentoring"]
+      title: "Full-Stack Software Engineer",
+      company: "M&F LLC | eLearning Startup",
+      location: "Whitehouse Station, NJ",
+      period: "June 2024 – Present",
+      description: "Leading full-stack development of cross-platform applications with focus on scalable cloud infrastructure. Developed Flutter-based e-commerce solutions with real-time data synchronization and implemented CI/CD pipelines for automated deployment.",
+      technologies: ["Flutter", "Dart", "AWS DynamoDB", "AWS CodePipeline", "AWS Amplify", "CI/CD"],
+      achievements: [
+        "Built cross-platform e-commerce store ensuring seamless iOS and Android experience",
+        "Implemented real-time product and inventory updates using DynamoDB",
+        "Designed scalable backend infrastructure for efficient data retrieval and storage",
+        "Utilized AWS CodePipeline for CI/CD automation, reducing manual deployment errors",
+        "Integrated AWS Amplify for comprehensive monitoring, testing, and analytics"
+      ]
     }
   ];
 
@@ -74,6 +65,21 @@ const ExperienceSection = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   {experience.description}
                 </p>
+                
+                {experience.achievements && (
+                  <div className="space-y-2">
+                    <h5 className="font-medium text-card-foreground">Key Achievements:</h5>
+                    <ul className="space-y-1">
+                      {experience.achievements.map((achievement, idx) => (
+                        <li key={idx} className="text-muted-foreground text-sm flex items-start gap-2">
+                          <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                          <span>{achievement}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                
                 <div className="flex flex-wrap gap-2">
                   {experience.technologies.map((tech) => (
                     <Badge key={tech} variant="secondary">{tech}</Badge>

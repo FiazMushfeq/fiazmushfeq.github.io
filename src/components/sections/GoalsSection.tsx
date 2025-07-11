@@ -8,14 +8,14 @@ const GoalsSection = () => {
   const shortTermGoals = [
     {
       icon: Target,
-      title: "Land First Full-Time Role",
-      description: "Secure a software engineer position at a innovative tech company",
-      timeline: "2024-2025"
+      title: "Advanced Cybersecurity Certification",
+      description: "Complete postgraduate certificate at UT Austin and pursue advanced security certifications",
+      timeline: "2025"
     },
     {
       icon: TrendingUp,
-      title: "Master Modern Technologies",
-      description: "Deepen expertise in React, Node.js, and cloud technologies",
+      title: "Cloud Architecture Mastery",
+      description: "Deepen expertise in AWS services and cloud security architecture patterns",
       timeline: "Next 12 months"
     }
   ];
@@ -23,14 +23,14 @@ const GoalsSection = () => {
   const longTermGoals = [
     {
       icon: Rocket,
-      title: "Lead Technical Projects",
-      description: "Architect and lead development of large-scale applications",
+      title: "Cybersecurity Leadership Role",
+      description: "Lead security architecture and DevSecOps initiatives in enterprise environments",
       timeline: "3-5 years"
     },
     {
       icon: Users,
-      title: "Mentor Future Developers",
-      description: "Give back to the community by mentoring aspiring engineers",
+      title: "Industry Thought Leadership",
+      description: "Contribute to cybersecurity community through speaking, writing, and mentoring",
       timeline: "5+ years"
     }
   ];
@@ -114,10 +114,11 @@ const GoalsSection = () => {
         <div className="bg-gradient-hero rounded-lg p-8 text-center max-w-4xl mx-auto border border-border shadow-elevated">
           <h3 className="text-3xl font-bold text-foreground mb-6">My Mission</h3>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            "To leverage technology as a force for positive change, creating solutions that not only 
-            solve complex problems but also improve people's lives. I aim to be a developer who 
-            combines technical excellence with empathy, innovation with responsibility, and individual 
-            growth with community impact."
+            "To bridge the gap between innovative software development and robust cybersecurity practices. 
+            I aim to create secure, scalable solutions that protect digital assets while enabling technological 
+            advancement. My goal is to be a security-minded engineer who combines technical excellence with 
+            strategic thinking, contributing to a safer digital world while mentoring the next generation 
+            of security-conscious developers."
           </p>
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow">
             Let's Build Something Amazing Together

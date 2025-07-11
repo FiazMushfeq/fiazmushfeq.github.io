@@ -8,24 +8,38 @@ import projectsBg from '@/assets/projects-bg.jpg';
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack web application with user authentication, shopping cart, and payment integration",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      githubUrl: "#",
+      title: "AI for Offensive and Defensive Operations",
+      description: "Implemented machine learning models for intrusion detection and attack simulations in cybersecurity",
+      technologies: ["Python", "Machine Learning", "Cybersecurity", "AI"],
+      githubUrl: "https://github.com/FiazMushfeq",
       liveUrl: "#"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates and team features",
-      technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
-      githubUrl: "#",
+      title: "SSL Certificate Analysis Tool",
+      description: "Analyzed certificate chains and subject alternative names for comprehensive HTTPS security evaluation",
+      technologies: ["Python", "SSL/TLS", "Security Analysis", "Cryptography"],
+      githubUrl: "https://github.com/FiazMushfeq",
       liveUrl: "#"
     },
     {
-      title: "Weather Analytics Dashboard",
-      description: "Data visualization platform analyzing weather patterns with interactive charts",
-      technologies: ["Python", "Flask", "D3.js", "PostgreSQL"],
-      githubUrl: "#",
+      title: "Cross-Platform E-Commerce Store",
+      description: "Developed a Flutter-based e-commerce application with real-time inventory management using AWS DynamoDB",
+      technologies: ["Flutter", "Dart", "AWS DynamoDB", "Real-time Sync"],
+      githubUrl: "https://github.com/FiazMushfeq",
+      liveUrl: "#"
+    },
+    {
+      title: "Windows Firewall Logs Analyzer",
+      description: "Built a comprehensive tool to parse and visualize firewall logs for detecting suspicious network activity",
+      technologies: ["Python", "Data Visualization", "Network Security", "Log Analysis"],
+      githubUrl: "https://github.com/FiazMushfeq",
+      liveUrl: "#"
+    },
+    {
+      title: "Cryptography with CyberChef",
+      description: "Applied advanced cryptographic transformations for secure communications and data integrity verification",
+      technologies: ["Cryptography", "Security", "Data Integrity", "CyberChef"],
+      githubUrl: "https://github.com/FiazMushfeq",
       liveUrl: "#"
     }
   ];
