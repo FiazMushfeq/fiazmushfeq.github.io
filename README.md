@@ -1,3 +1,5 @@
+# No longer using Lovable
+
 # Welcome to your Lovable project
 
 ## Project info
