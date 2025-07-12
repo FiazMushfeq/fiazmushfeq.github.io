@@ -8,26 +8,26 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       icon: Code2,
-      title: "Programming Languages",
-      skills: ["Python", "Java", "Dart", "C++", "JavaScript", "Node.js", "SQL", "Go", "Haskell"],
+      title: "Languages",
+      skills: ["Python", "Java", "Dart"],
       color: "text-blue-400"
     },
     {
       icon: Brain,
-      title: "AI & Machine Learning Tools",
-      skills: ["ChatGPT", "GitHub Copilot", "DeepSeek", "Claude"],
+      title: "AI & Productivity Tools",
+      skills: ["ChatGPT", "GitHub Copilot", "DeepSeek", "Claude", "Lovable"],
       color: "text-purple-400"
     },
     {
       icon: Cloud,
-      title: "Cloud Platforms & Services",
-      skills: ["AWS CodePipeline", "AWS Lambda", "AWS DynamoDB", "AWS API Gateway", "AWS S3", "AWS CloudFront"],
+      title: "Cloud & DevOps",
+      skills: ["AWS Lambda", "DynamoDB", "S3", "API Gateway", "CodePipeline", "CloudFront", "AWS Amplify", "Docker"],
       color: "text-orange-400"
     },
     {
       icon: Wrench,
-      title: "Frameworks & Tools",
-      skills: ["Flutter", "Flask", "PostgreSQL", "MySQL", "Git", "GitLab", "Bitbucket", "Jira", "Figma", "gRPC"],
+      title: "Frameworks & Development Tools",
+      skills: ["Flutter", "Flask", "gRPC", "PostgreSQL", "MySQL", "DynamoDB", "Git", "GitHub", "GitLab", "Bitbucket", "Jira", "Figma", "n8n"],
       color: "text-green-400"
     }
   ];
@@ -76,15 +76,27 @@ const SkillsSection = () => {
           })}
         </div>
 
-        {/* Operating Systems */}
-        <div className="text-center bg-card/90 backdrop-blur-sm rounded-lg p-6 max-w-2xl mx-auto border border-border">
-          <h3 className="text-xl font-bold text-card-foreground mb-4">Operating Systems</h3>
-          <div className="flex justify-center gap-3">
-            {operatingSystems.map((os) => (
-              <Badge key={os} variant="outline" className="text-sm px-4 py-2">
-                {os}
-              </Badge>
-            ))}
+        {/* IDEs & Operating Systems */}
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="text-center bg-card/90 backdrop-blur-sm rounded-lg p-6 border border-border">
+            <h3 className="text-xl font-bold text-card-foreground mb-4">IDEs & Editors</h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              {["VS Code", "Android Studio", "Xcode", "Cursor"].map((ide) => (
+                <Badge key={ide} variant="outline" className="text-sm px-4 py-2">
+                  {ide}
+                </Badge>
+              ))}
+            </div>
+          </div>
+          <div className="text-center bg-card/90 backdrop-blur-sm rounded-lg p-6 border border-border">
+            <h3 className="text-xl font-bold text-card-foreground mb-4">Operating Systems</h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              {operatingSystems.map((os) => (
+                <Badge key={os} variant="outline" className="text-sm px-4 py-2">
+                  {os}
+                </Badge>
+              ))}
+            </div>
           </div>
         </div>
       </div>

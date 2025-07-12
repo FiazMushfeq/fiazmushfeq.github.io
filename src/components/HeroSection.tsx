@@ -23,8 +23,8 @@ const HeroSection = () => {
           </p>
           <div className="text-lg text-muted-foreground space-y-2">
             <p className="max-w-2xl mx-auto leading-relaxed">
-              Passionate cybersecurity professional and full-stack developer with expertise in cloud technologies, 
-              machine learning applications, and scalable system architecture.
+              Full-Stack Software Engineer with expertise in cloud technologies, machine learning applications, 
+              and scalable system architecture. Currently working at M&F LLC developing cross-platform e-commerce solutions.
             </p>
             <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6 text-sm">
               <span>📧 fiazmushfeq01@gmail.com</span>

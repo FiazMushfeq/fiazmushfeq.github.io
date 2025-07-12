@@ -20,6 +20,19 @@ const ExperienceSection = () => {
         "Utilized AWS CodePipeline for CI/CD automation, reducing manual deployment errors",
         "Integrated AWS Amplify for comprehensive monitoring, testing, and analytics"
       ]
+    },
+    {
+      title: "Software Engineer Intern",
+      company: "FamaCash | FinTech Startup",
+      location: "Collegeville, PA",
+      period: "June 2022 – February 2023",
+      description: "Gained hands-on experience in software development within a fast-paced fintech startup environment.",
+      technologies: ["Python", "Java", "Git", "Agile"],
+      achievements: [
+        "Collaborated with development team on various software projects",
+        "Learned industry best practices and development methodologies",
+        "Contributed to code reviews and testing processes"
+      ]
     }
   ];
 

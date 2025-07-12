@@ -8,6 +8,13 @@ import projectsBg from '@/assets/projects-bg.jpg';
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "Portfolio Website",
+      description: "Used Lovable and Cursor to create a dynamic and modernized website to showcase personal and career work",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+      githubUrl: "https://github.com/FiazMushfeq",
+      liveUrl: "https://fiazmushfeq.github.io/"
+    },
+    {
       title: "AI for Offensive and Defensive Operations",
       description: "Implemented machine learning models for intrusion detection and attack simulations in cybersecurity",
       technologies: ["Python", "Machine Learning", "Cybersecurity", "AI"],
@@ -15,30 +22,23 @@ const ProjectsSection = () => {
       liveUrl: "#"
     },
     {
-      title: "SSL Certificate Analysis Tool",
-      description: "Analyzed certificate chains and subject alternative names for comprehensive HTTPS security evaluation",
+      title: "SSL Certificate Analysis",
+      description: "Analyzed certificate chains and subject alternative names for HTTPS security evaluation",
       technologies: ["Python", "SSL/TLS", "Security Analysis", "Cryptography"],
       githubUrl: "https://github.com/FiazMushfeq",
       liveUrl: "#"
     },
     {
-      title: "Cross-Platform E-Commerce Store",
-      description: "Developed a Flutter-based e-commerce application with real-time inventory management using AWS DynamoDB",
-      technologies: ["Flutter", "Dart", "AWS DynamoDB", "Real-time Sync"],
-      githubUrl: "https://github.com/FiazMushfeq",
-      liveUrl: "#"
-    },
-    {
-      title: "Windows Firewall Logs Analyzer",
-      description: "Built a comprehensive tool to parse and visualize firewall logs for detecting suspicious network activity",
-      technologies: ["Python", "Data Visualization", "Network Security", "Log Analysis"],
-      githubUrl: "https://github.com/FiazMushfeq",
-      liveUrl: "#"
-    },
-    {
       title: "Cryptography with CyberChef",
-      description: "Applied advanced cryptographic transformations for secure communications and data integrity verification",
+      description: "Applied cryptographic transformations for secure communications and data integrity checks",
       technologies: ["Cryptography", "Security", "Data Integrity", "CyberChef"],
+      githubUrl: "https://github.com/FiazMushfeq",
+      liveUrl: "#"
+    },
+    {
+      title: "Windows Firewall Logs Analysis",
+      description: "Parsed and visualized logs to detect suspicious network activity and intrusion attempts",
+      technologies: ["Python", "Data Visualization", "Network Security", "Log Analysis"],
       githubUrl: "https://github.com/FiazMushfeq",
       liveUrl: "#"
     }
