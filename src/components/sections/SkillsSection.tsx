@@ -2,7 +2,7 @@ import { Code2, Brain, Cloud, Wrench } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import PortfolioSection from '../PortfolioSection';
-import skillsBg from '@/assets/hero-bg.jpg'; // Reusing hero background for skills
+import skillsBg from '@/assets/samurai.jpg'; // Using samurai background for skills
 
 const SkillsSection = () => {
   const skillCategories = [
@@ -42,9 +42,6 @@ const SkillsSection = () => {
             <Code2 className="h-12 w-12 text-primary" />
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">Technical Skills</h2>
           </div>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A comprehensive toolkit spanning cybersecurity, cloud technologies, and full-stack development
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">

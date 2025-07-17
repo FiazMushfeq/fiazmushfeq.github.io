@@ -6,13 +6,12 @@ const Navigation = () => {
 
   const sections = [
     { id: 'hero', label: 'Home' },
+    { id: 'certifications', label: 'Certifications' },
     { id: 'school', label: 'Education' },
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
     { id: 'skills', label: 'Skills' },
-    { id: 'certifications', label: 'Certifications' },
     { id: 'hobbies', label: 'Hobbies' },
-    { id: 'goals', label: 'Goals' },
   ];
 
   useEffect(() => {

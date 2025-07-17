@@ -44,9 +44,6 @@ const ExperienceSection = () => {
             <Briefcase className="h-12 w-12 text-primary" />
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">Experience</h2>
           </div>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Growing through hands-on experience and collaborative projects in the tech industry
-          </p>
         </div>
 
         <div className="space-y-8 max-w-4xl mx-auto">

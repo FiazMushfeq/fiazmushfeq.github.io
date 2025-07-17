@@ -6,20 +6,18 @@ import ProjectsSection from '@/components/sections/ProjectsSection';
 import SkillsSection from '@/components/sections/SkillsSection';
 import CertificationsSection from '@/components/sections/CertificationsSection';
 import HobbiesSection from '@/components/sections/HobbiesSection';
-import GoalsSection from '@/components/sections/GoalsSection';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       <HeroSection />
+      <CertificationsSection />
       <SchoolSection />
       <ExperienceSection />
       <ProjectsSection />
       <SkillsSection />
-      <CertificationsSection />
       <HobbiesSection />
-      <GoalsSection />
     </div>
   );
 };

@@ -14,7 +14,7 @@ const CertificationsSection = () => {
       credentialId: "View on Credly",
       skills: ["Cloud Computing", "AWS Services", "Architecture", "Security", "Pricing"],
       verified: true,
-      credentialUrl: "https://credly.com/users/fiaz-mushfeq"
+      credentialUrl: "https://www.credly.com/badges/84794518-9943-4be0-9d3c-2fac00808863"
     },
     {
       title: "Scaled Agile Certified SAFe® 6 DevOps Practitioner",
@@ -23,7 +23,7 @@ const CertificationsSection = () => {
       credentialId: "View on Credly",
       skills: ["DevOps", "Agile", "CI/CD", "Lean Portfolio Management", "SAFe Framework"],
       verified: true,
-      credentialUrl: "https://credly.com/users/fiaz-mushfeq"
+      credentialUrl: "https://www.credly.com/badges/d9338c01-8e55-4c78-aa58-c036f7f7378d"
     }
   ];
 
@@ -35,9 +35,6 @@ const CertificationsSection = () => {
             <Award className="h-12 w-12 text-primary" />
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">Certifications</h2>
           </div>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Continuously expanding knowledge through industry-recognized certifications and professional development
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">

@@ -1,7 +1,7 @@
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import PortfolioSection from './PortfolioSection';
-import heroBg from '@/assets/hero-bg.jpg';
+import heroBg from '@/assets/ocean-night.jpg';
 
 const HeroSection = () => {
   const scrollToNext = () => {
@@ -21,22 +21,16 @@ const HeroSection = () => {
           <p className="text-xl md:text-2xl text-primary font-medium">
             Full-Stack Software Engineer
           </p>
-          <div className="text-lg text-muted-foreground space-y-2">
-            <p className="max-w-2xl mx-auto leading-relaxed">
-              Full-Stack Software Engineer with expertise in cloud technologies, machine learning applications, 
-              and scalable system architecture. Currently working at M&F LLC developing cross-platform e-commerce solutions.
-            </p>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6 text-sm">
-              <span>📧 fiazmushfeq01@gmail.com</span>
-              <span>📍 Dayton, NJ</span>
-            </div>
-          </div>
+
         </div>
         
         <div className="flex justify-center gap-4 pt-4">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow">
-            <Mail className="mr-2 h-5 w-5" />
-            Contact Me
+          <Button 
+            size="lg" 
+            className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow"
+            onClick={() => window.open('mailto:fiazmushfeq01@gmail.com', '_self')}
+          >
+            fiazmushfeq01@gmail.com
           </Button>
           <Button 
             variant="secondary" 

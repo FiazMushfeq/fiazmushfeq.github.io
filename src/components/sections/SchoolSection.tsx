@@ -13,9 +13,6 @@ const SchoolSection = () => {
             <GraduationCap className="h-12 w-12 text-primary" />
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">Education</h2>
           </div>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Building a strong foundation in computer science and software engineering
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
