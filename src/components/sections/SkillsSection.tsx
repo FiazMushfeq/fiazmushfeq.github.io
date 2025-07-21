@@ -90,10 +90,10 @@ const SkillsSection = () => {
         </div>
 
         {/* IDEs & Operating Systems */}
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto">
           <Card className="bg-card/90 backdrop-blur-sm border-border shadow-elevated hover:shadow-glow transition-all duration-300 group">
             <CardHeader className="pb-4">
-              <div className="flex items-center justify-center gap-4">
+              <div className="flex items-center gap-4">
                 <div className="p-3 rounded-full bg-secondary/50 group-hover:bg-secondary transition-colors">
                   <Terminal className="h-6 w-6 text-indigo-400 group-hover:scale-110 transition-transform" />
                 </div>
@@ -103,12 +103,12 @@ const SkillsSection = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap justify-center gap-3">
+              <div className="flex flex-wrap gap-2">
                 {["VS Code", "Android Studio", "Xcode", "IntelliJ IDEA", "PyCharm", "Cursor"].map((ide) => (
                   <Badge 
                     key={ide} 
-                    variant="outline" 
-                    className="text-sm px-4 py-2 cursor-pointer hover:bg-primary hover:text-primary-foreground transition-all duration-200 hover:scale-105"
+                    variant="secondary" 
+                    className="text-xs"
                   >
                     {ide}
                   </Badge>
@@ -118,7 +118,7 @@ const SkillsSection = () => {
           </Card>
           <Card className="bg-card/90 backdrop-blur-sm border-border shadow-elevated hover:shadow-glow transition-all duration-300 group">
             <CardHeader className="pb-4">
-              <div className="flex items-center justify-center gap-4">
+              <div className="flex items-center gap-4">
                 <div className="p-3 rounded-full bg-secondary/50 group-hover:bg-secondary transition-colors">
                   <Laptop className="h-6 w-6 text-emerald-400 group-hover:scale-110 transition-transform" />
                 </div>
@@ -128,12 +128,12 @@ const SkillsSection = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-wrap justify-center gap-3">
+              <div className="flex flex-wrap gap-2">
                 {operatingSystems.map((os) => (
                   <Badge 
                     key={os} 
-                    variant="outline" 
-                    className="text-sm px-4 py-2 cursor-pointer hover:bg-primary hover:text-primary-foreground transition-all duration-200 hover:scale-105"
+                    variant="secondary" 
+                    className="text-xs"
                   >
                     {os}
                   </Badge>
