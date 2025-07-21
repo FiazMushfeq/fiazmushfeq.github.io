@@ -8,30 +8,28 @@ const ExperienceSection = () => {
   const experiences = [
     {
       title: "Full-Stack Software Engineer",
-      company: "M&F LLC | eLearning Startup",
+      company: "M&F LLC | Startup",
       location: "Whitehouse Station, NJ",
-      period: "June 2024 – Present",
-      description: "Leading full-stack development of cross-platform applications with focus on scalable cloud infrastructure. Developed Flutter-based e-commerce solutions with real-time data synchronization and implemented CI/CD pipelines for automated deployment.",
-      technologies: ["Flutter", "Dart", "AWS DynamoDB", "AWS CodePipeline", "AWS Amplify", "CI/CD"],
+      period: "Jun 2024 – Present",
+      description: "Developing mobile-optimized applications with focus on scalable cloud infrastructure and CI/CD automation. Building secure and scalable AWS solutions for real-time data processing.",
+      technologies: ["Flutter", "AWS Lambda", "AWS DynamoDB", "AWS CodePipeline", "AWS API Gateway", "CI/CD"],
       achievements: [
-        "Built cross-platform e-commerce store ensuring seamless iOS and Android experience",
-        "Implemented real-time product and inventory updates using DynamoDB",
-        "Designed scalable backend infrastructure for efficient data retrieval and storage",
-        "Utilized AWS CodePipeline for CI/CD automation, reducing manual deployment errors",
-        "Integrated AWS Amplify for comprehensive monitoring, testing, and analytics"
+        "Developed a mobile-optimized storefront using Flutter, delivering a responsive and intuitive shopping experience",
+        "Implemented CI/CD automation using AWS CodePipeline, significantly reducing deployment time and manual errors",
+        "Built a secure and scalable AWS Lambda function to fetch product data from DynamoDB, optimizing for low latency and high availability",
+        "Integrated AWS API Gateway with Lambda and DynamoDB to expose RESTful endpoints for real-time product retrieval"
       ]
     },
     {
       title: "Software Engineer Intern",
-      company: "FamaCash | FinTech Startup",
+      company: "Fintech Ecosystem Development Corp | Startup",
       location: "Collegeville, PA",
-      period: "June 2022 – February 2023",
-      description: "Gained hands-on experience in software development within a fast-paced fintech startup environment.",
-      technologies: ["Python", "Java", "Git", "Agile"],
+      period: "Jun 2022 – Feb 2023",
+      description: "Contributed to blockchain application development and explored real-world use cases of distributed ledger technology.",
+      technologies: ["Blockchain", "Smart Contracts", "Python", "Git"],
       achievements: [
-        "Collaborated with development team on various software projects",
-        "Learned industry best practices and development methodologies",
-        "Contributed to code reviews and testing processes"
+        "Contributed to the development of a proof-of-concept blockchain application, showcasing foundational knowledge of smart contract design and deployment",
+        "Explored real-world use cases, advantages, and limitations of blockchain technology through hands-on project work"
       ]
     }
   ];
