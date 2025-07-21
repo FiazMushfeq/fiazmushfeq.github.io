@@ -1,4 +1,4 @@
-import { Code2, Brain, Cloud, Wrench } from 'lucide-react';
+import { Code2, Database, Cloud, Wrench, GitBranch, Monitor, Terminal, Laptop } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import PortfolioSection from '../PortfolioSection';
@@ -8,31 +8,47 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       icon: Code2,
-      title: "Languages",
-      skills: ["Python", "Java", "Dart"],
+      title: "Back End Development",
+      skills: ["Python", "Java", "Dart", "C++", "NodeJS", "Go"],
+      proficiency: {
+        "Proficient": ["Python", "Java", "Dart"],
+        "Familiar": ["C++", "NodeJS", "Go"]
+      },
       color: "text-blue-400"
-    },
-    {
-      icon: Brain,
-      title: "AI & Productivity Tools",
-      skills: ["ChatGPT", "GitHub Copilot", "DeepSeek", "Claude", "Lovable"],
-      color: "text-purple-400"
     },
     {
       icon: Cloud,
       title: "Cloud & DevOps",
-      skills: ["AWS Lambda", "DynamoDB", "S3", "API Gateway", "CodePipeline", "CloudFront", "AWS Amplify", "Docker"],
+      skills: ["AWS Lambda", "API Gateway", "CodePipeline", "S3", "Route53", "CloudFormation", "Aurora", "DynamoDB", "EC2", "IAM", "GitHub Actions", "GitLab CI/CD", "AWS CodeDeploy", "REST", "gRPC"],
       color: "text-orange-400"
     },
     {
-      icon: Wrench,
-      title: "Frameworks & Development Tools",
-      skills: ["Flutter", "Flask", "gRPC", "PostgreSQL", "MySQL", "DynamoDB", "Git", "GitHub", "GitLab", "Bitbucket", "Jira", "Figma", "n8n"],
+      icon: Database,
+      title: "Database Management",
+      skills: ["MySQL", "PostgreSQL", "Amazon Aurora", "Amazon DynamoDB"],
       color: "text-green-400"
+    },
+    {
+      icon: Wrench,
+      title: "Front End Development",
+      skills: ["Flutter", "JavaScript", "TypeScript", "HTML", "CSS"],
+      color: "text-purple-400"
+    },
+    {
+      icon: GitBranch,
+      title: "Version Control",
+      skills: ["Git", "GitHub", "GitLab", "Bitbucket"],
+      color: "text-cyan-400"
+    },
+    {
+      icon: Monitor,
+      title: "Virtualization Tools",
+      skills: ["AWS EC2", "Docker", "VirtualBox"],
+      color: "text-red-400"
     }
   ];
 
-  const operatingSystems = ["MacOS", "Windows", "Linux"];
+  const operatingSystems = ["macOS", "Windows", "Linux"];
 
   return (
     <PortfolioSection id="skills" backgroundImage={skillsBg}>
@@ -44,7 +60,7 @@ const SkillsSection = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {skillCategories.map((category, index) => {
             const IconComponent = category.icon;
             return (
@@ -75,26 +91,56 @@ const SkillsSection = () => {
 
         {/* IDEs & Operating Systems */}
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <div className="text-center bg-card/90 backdrop-blur-sm rounded-lg p-6 border border-border">
-            <h3 className="text-xl font-bold text-card-foreground mb-4">IDEs & Editors</h3>
-            <div className="flex flex-wrap justify-center gap-3">
-              {["VS Code", "Android Studio", "Xcode", "Cursor"].map((ide) => (
-                <Badge key={ide} variant="outline" className="text-sm px-4 py-2">
-                  {ide}
-                </Badge>
-              ))}
-            </div>
-          </div>
-          <div className="text-center bg-card/90 backdrop-blur-sm rounded-lg p-6 border border-border">
-            <h3 className="text-xl font-bold text-card-foreground mb-4">Operating Systems</h3>
-            <div className="flex flex-wrap justify-center gap-3">
-              {operatingSystems.map((os) => (
-                <Badge key={os} variant="outline" className="text-sm px-4 py-2">
-                  {os}
-                </Badge>
-              ))}
-            </div>
-          </div>
+          <Card className="bg-card/90 backdrop-blur-sm border-border shadow-elevated hover:shadow-glow transition-all duration-300 group">
+            <CardHeader className="pb-4">
+              <div className="flex items-center justify-center gap-4">
+                <div className="p-3 rounded-full bg-secondary/50 group-hover:bg-secondary transition-colors">
+                  <Terminal className="h-6 w-6 text-indigo-400 group-hover:scale-110 transition-transform" />
+                </div>
+                <CardTitle className="text-card-foreground group-hover:text-primary transition-colors">
+                  IDEs & Editors
+                </CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap justify-center gap-3">
+                {["VS Code", "Android Studio", "Xcode", "IntelliJ IDEA", "PyCharm", "Cursor"].map((ide) => (
+                  <Badge 
+                    key={ide} 
+                    variant="outline" 
+                    className="text-sm px-4 py-2 cursor-pointer hover:bg-primary hover:text-primary-foreground transition-all duration-200 hover:scale-105"
+                  >
+                    {ide}
+                  </Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="bg-card/90 backdrop-blur-sm border-border shadow-elevated hover:shadow-glow transition-all duration-300 group">
+            <CardHeader className="pb-4">
+              <div className="flex items-center justify-center gap-4">
+                <div className="p-3 rounded-full bg-secondary/50 group-hover:bg-secondary transition-colors">
+                  <Laptop className="h-6 w-6 text-emerald-400 group-hover:scale-110 transition-transform" />
+                </div>
+                <CardTitle className="text-card-foreground group-hover:text-primary transition-colors">
+                  Operating Systems
+                </CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap justify-center gap-3">
+                {operatingSystems.map((os) => (
+                  <Badge 
+                    key={os} 
+                    variant="outline" 
+                    className="text-sm px-4 py-2 cursor-pointer hover:bg-primary hover:text-primary-foreground transition-all duration-200 hover:scale-105"
+                  >
+                    {os}
+                  </Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </PortfolioSection>

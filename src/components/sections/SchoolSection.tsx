@@ -15,35 +15,8 @@ const SchoolSection = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <Card className="bg-card/90 backdrop-blur-sm border-border shadow-elevated">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-3 text-card-foreground">
-                <GraduationCap className="h-6 w-6 text-primary" />
-                University of Texas at Austin
-              </CardTitle>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Calendar className="h-4 w-4" />
-                <span>Expected November 2025</span>
-              </div>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div>
-                <h4 className="font-semibold text-card-foreground">Postgraduate Certificate in Cybersecurity</h4>
-                <p className="text-muted-foreground">Online Program</p>
-              </div>
-              <div className="space-y-2">
-                <h5 className="font-medium text-card-foreground">Relevant Coursework:</h5>
-                <div className="flex flex-wrap gap-2">
-                  {['Containerization', 'Virtualization', 'Windows Server', 'Database Management', 'Cloud Computing'].map((course) => (
-                    <Badge key={course} variant="secondary">{course}</Badge>
-                  ))}
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-card/90 backdrop-blur-sm border-border shadow-elevated">
+        <div className="flex justify-center">
+          <Card className="bg-card/90 backdrop-blur-sm border-border shadow-elevated max-w-2xl w-full">
             <CardHeader>
               <CardTitle className="flex items-center gap-3 text-card-foreground">
                 <GraduationCap className="h-6 w-6 text-primary" />

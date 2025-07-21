@@ -8,6 +8,15 @@ import certificationsBg from '@/assets/certifications-bg.jpg';
 const CertificationsSection = () => {
   const certifications = [
     {
+      title: "Postgraduate Certificate in Cybersecurity",
+      issuer: "University of Texas – Austin",
+      date: "Jun 2025 – Present",
+      credentialId: "In Progress",
+      skills: ["Cybersecurity", "Information Security", "Risk Management", "Network Security", "Incident Response"],
+      verified: false,
+      credentialUrl: "#"
+    },
+    {
       title: "AWS Certified Cloud Practitioner",
       issuer: "Amazon Web Services",
       date: "December 2024",
@@ -37,7 +46,7 @@ const CertificationsSection = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {certifications.map((cert, index) => (
             <Card key={index} className="bg-card/90 backdrop-blur-sm border-border shadow-elevated hover:shadow-glow transition-all duration-300 group">
               <CardHeader>
@@ -78,15 +87,27 @@ const CertificationsSection = () => {
                   </div>
                 </div>
 
-                <Button 
-                  size="sm" 
-                  variant="outline" 
-                  className="w-full"
-                  onClick={() => window.open(cert.credentialUrl, '_blank')}
-                >
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  View Credential
-                </Button>
+                {cert.credentialUrl !== "#" ? (
+                  <Button 
+                    size="sm" 
+                    variant="outline" 
+                    className="w-full"
+                    onClick={() => window.open(cert.credentialUrl, '_blank')}
+                  >
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    View Credential
+                  </Button>
+                ) : (
+                  <Button 
+                    size="sm" 
+                    variant="outline" 
+                    className="w-full" 
+                    disabled
+                  >
+                    <Calendar className="mr-2 h-4 w-4" />
+                    In Progress
+                  </Button>
+                )}
               </CardContent>
             </Card>
           ))}

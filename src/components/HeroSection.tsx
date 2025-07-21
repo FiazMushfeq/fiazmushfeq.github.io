@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import PortfolioSection from './PortfolioSection';
 import heroBg from '@/assets/ocean-night.jpg';
@@ -49,6 +49,15 @@ const HeroSection = () => {
           >
             <Linkedin className="mr-2 h-5 w-5" />
             LinkedIn
+          </Button>
+          <Button 
+            variant="secondary" 
+            size="lg" 
+            className="bg-secondary/80 hover:bg-secondary text-secondary-foreground"
+            onClick={() => window.open('https://www.credly.com/users/fiaz-mushfeq', '_blank')}
+          >
+            <Award className="mr-2 h-5 w-5" />
+            Credly
           </Button>
         </div>
 
