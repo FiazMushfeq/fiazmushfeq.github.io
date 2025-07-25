@@ -26,7 +26,7 @@ const ExperienceSection = () => {
       location: "Collegeville, PA",
       period: "Jun 2022 – Feb 2023",
       description: "Contributed to blockchain application development and explored real-world use cases of distributed ledger technology.",
-      technologies: ["Blockchain", "Smart Contracts", "Python", "Git"],
+      technologies: ["Java", "API Development", "Python", "Testing"],
       achievements: [
         "Contributed to the development of a proof-of-concept blockchain application, showcasing foundational knowledge of smart contract design and deployment",
         "Explored real-world use cases, advantages, and limitations of blockchain technology through hands-on project work"

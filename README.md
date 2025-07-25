@@ -120,7 +120,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Contact
 
 Feel free to reach out if you have any questions or suggestions!
-
----
-
-_Built with ❤️ using [Lovable.dev](https://lovable.dev)_

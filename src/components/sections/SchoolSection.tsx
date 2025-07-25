@@ -32,21 +32,16 @@ const SchoolSection = () => {
                 <h4 className="font-semibold text-card-foreground">Bachelor of Science in Computer Science</h4>
                 <p className="text-muted-foreground">New Brunswick, NJ</p>
               </div>
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <div>
-                    <h4 className="font-semibold text-card-foreground">Strong Foundation</h4>
-                    <p className="text-muted-foreground">Comprehensive computer science curriculum</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <div>
-                    <h4 className="font-semibold text-card-foreground">Academic Excellence</h4>
-                    <p className="text-muted-foreground">Focus on software engineering and cybersecurity</p>
-                  </div>
-                </div>
+              <div>
+                <h5 className="font-semibold text-card-foreground mt-4">Relevant Coursework</h5>
+                <ul className="list-disc list-inside text-muted-foreground text-sm mt-2">
+                  <li>Data Structures & Algorithms</li>
+                  <li>Computer Architecture</li>
+                  <li>Computer Networks</li>
+                  <li>Software Methodology</li>
+                  <li>Data Science</li>
+                  <li>Database Management</li>
+                </ul>
               </div>
             </CardContent>
           </Card>

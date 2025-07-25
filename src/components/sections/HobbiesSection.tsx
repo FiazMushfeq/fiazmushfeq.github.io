@@ -89,7 +89,7 @@ const HobbiesSection = () => {
         <div className="text-center bg-card/90 backdrop-blur-sm rounded-lg p-8 max-w-4xl mx-auto border border-border">
           <h3 className="text-2xl font-bold text-card-foreground mb-4">Life Philosophy</h3>
           <p className="text-lg text-muted-foreground leading-relaxed italic">
-            "The philosophers have only interpreted the world, in various ways; the point, however, is to change it" ~ Karl Marx
+            "It's not what you look at that matters, it's what you see" ~ Henry David Thoreau
           </p>
         </div>
       </div>

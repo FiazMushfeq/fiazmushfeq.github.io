@@ -19,7 +19,7 @@ const SkillsSection = () => {
     {
       icon: Cloud,
       title: "Cloud & DevOps",
-      skills: ["AWS Lambda", "API Gateway", "CodePipeline", "S3", "Route53", "CloudFormation", "Aurora", "DynamoDB", "EC2", "IAM", "GitHub Actions", "GitLab CI/CD", "AWS CodeDeploy", "REST", "gRPC"],
+      skills: ["AWS Lambda", "API Gateway", "CodePipeline", "S3", "Route53", "CloudFormation", "IAM", "GitHub Actions", "GitLab CI/CD", "AWS CodeDeploy"],
       color: "text-orange-400"
     },
     {
@@ -36,8 +36,8 @@ const SkillsSection = () => {
     },
     {
       icon: GitBranch,
-      title: "Version Control",
-      skills: ["Git", "GitHub", "GitLab", "Bitbucket"],
+      title: "Version Control Systems",
+      skills: ["GitHub", "GitLab", "Bitbucket"],
       color: "text-cyan-400"
     },
     {

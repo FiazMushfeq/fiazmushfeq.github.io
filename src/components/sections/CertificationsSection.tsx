@@ -12,7 +12,7 @@ const CertificationsSection = () => {
       issuer: "University of Texas – Austin",
       date: "Jun 2025 – Present",
       credentialId: "In Progress",
-      skills: ["Cybersecurity", "Information Security", "Risk Management", "Network Security", "Incident Response"],
+      skills: ["Network Security", "Firewall Essentials", "GRC", "Cloud Security", "Pen Testing", "Wireshark", "Palo Alto Networks"],
       verified: false,
       credentialUrl: "#"
     },
@@ -20,17 +20,17 @@ const CertificationsSection = () => {
       title: "AWS Certified Cloud Practitioner",
       issuer: "Amazon Web Services",
       date: "December 2024",
-      credentialId: "View on Credly",
-      skills: ["Cloud Computing", "AWS Services", "Architecture", "Security", "Pricing"],
+      credentialId: "View on CertMetrics",
+      skills: ["AWS/Amazon Web Services", "Cloud Computing", "Cloud Architecture", "Security"],
       verified: true,
-      credentialUrl: "https://www.credly.com/badges/84794518-9943-4be0-9d3c-2fac00808863"
+      credentialUrl: "https://cp.certmetrics.com/amazon/en/public/verify/credential/9f9ada469eca4dfda7478acb7e8cc6af"
     },
     {
       title: "Scaled Agile Certified SAFe® 6 DevOps Practitioner",
       issuer: "Scaled Agile",
       date: "October 2024",
       credentialId: "View on Credly",
-      skills: ["DevOps", "Agile", "CI/CD", "Lean Portfolio Management", "SAFe Framework"],
+      skills: ["CI/CD", "DevOps", "Scaled Agile Framework"],
       verified: true,
       credentialUrl: "https://www.credly.com/badges/d9338c01-8e55-4c78-aa58-c036f7f7378d"
     }

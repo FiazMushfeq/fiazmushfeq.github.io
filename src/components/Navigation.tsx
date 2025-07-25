@@ -8,8 +8,8 @@ const Navigation = () => {
     { id: 'hero', label: 'Home' },
     { id: 'certifications', label: 'Certifications' },
     { id: 'school', label: 'Education' },
-    { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
+    { id: 'experience', label: 'Experience' },
     { id: 'skills', label: 'Skills' },
     { id: 'hobbies', label: 'Hobbies' },
   ];

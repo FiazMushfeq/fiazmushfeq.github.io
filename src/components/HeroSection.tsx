@@ -19,19 +19,20 @@ const HeroSection = () => {
             Fiaz Mushfeq
           </h1>
           <p className="text-xl md:text-2xl text-primary font-medium">
-            Full-Stack Software Engineer
+            Aspiring Cloud Engineer, DevOps Engineer, Cybersecurity Analyst, and Full Stack Developer!
           </p>
 
         </div>
         
         <div className="flex justify-center gap-4 pt-4">
-          <Button 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow"
-            onClick={() => window.open('mailto:fiazmushfeq01@gmail.com', '_self')}
-          >
-            fiazmushfeq01@gmail.com
-          </Button>
+          <a href="mailto:fiazmushfeq01@gmail.com" style={{ textDecoration: 'none' }}>
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow"
+            >
+              fiazmushfeq01@gmail.com
+            </Button>
+          </a>
           <Button 
             variant="secondary" 
             size="lg" 
