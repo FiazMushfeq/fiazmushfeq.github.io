@@ -12,88 +12,54 @@ This project was initially created using [Lovable.dev](https://lovable.dev), an 
 
 ## Technologies Used
 
-This project is built with modern web technologies:
-
-- **Vite** - Fast build tool and development server
-- **TypeScript** - Type-safe JavaScript
-- **React** - UI library
-- **shadcn/ui** - Modern UI components
-- **Tailwind CSS** - Utility-first CSS framework
-- **Lucide React** - Beautiful icons
+- **Vite** – Fast build tool and development server
+- **TypeScript** – Type-safe JavaScript
+- **React** – UI library
+- **shadcn/ui** – Modern UI components
+- **Tailwind CSS** – Utility-first CSS framework
+- **Lucide React** – Beautiful icons
 
 ## Getting Started
 
 ### Prerequisites
 
-Make sure you have Node.js and npm installed:
-
-- [Install Node.js with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Make sure you have Node.js and npm installed:  
+[Install Node.js with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
 ### Local Development
 
 ```bash
-# Clone the repository
 git clone <YOUR_GIT_URL>
-
-# Navigate to project directory
 cd personal-website
-
-# Install dependencies
 npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
+npm run dev        # Start development server
+npm run build      # Build for production
+npm run preview    # Preview production build
 ```
 
 ## Deployment
 
 ### GitHub Pages
 
-This project is configured for automatic deployment to GitHub Pages:
+This project is configured for automatic deployment to GitHub Pages.
 
-1. **Automatic Deployment**:
-
-   - Push changes to the main branch
-   - GitHub Actions will automatically build and deploy
-   - Site will be available at: `https://yourusername.github.io/personal-website/`
-
-2. **Manual Deployment**:
+1. **Manual Deployment**
 
    ```bash
    npm run deploy
    ```
-
-3. **Setup GitHub Pages**:
-   - Go to repository Settings → Pages
-   - Set source to "Deploy from a branch"
-   - Select "gh-pages" branch and "/ (root)" folder
-   - Save settings
-
-### Custom Domain (Optional)
-
-To use a custom domain:
-
-1. Go to repository Settings → Pages
-2. Enter your domain under "Custom domain"
-3. Add a CNAME record in your DNS settings pointing to `yourusername.github.io`
 
 ## Project Structure
 
 ```
 src/
 ├── components/          # React components
-│   ├── sections/       # Page sections
-│   └── ui/            # Reusable UI components
-├── assets/            # Images and static assets
-├── hooks/             # Custom React hooks
-├── lib/               # Utility functions
-└── pages/             # Page components
+│   ├── sections/       # Page sections (Hero, Certifications, Education, Projects, Experience, Skills, Hobbies)
+│   └── ui/             # Reusable UI components
+├── assets/             # Images and static assets
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+└── pages/              # Page components
 ```
 
 ## Features
@@ -105,6 +71,14 @@ src/
 - 🎯 SEO optimized
 - 🚀 GitHub Pages deployment ready
 - 💫 Smooth animations and transitions
+
+## Recent Changes
+
+- **Projects section** now appears above Experience
+- **Navigation** order updated to reflect Projects before Experience
+- **Education section** lists relevant coursework under Rutgers University
+- **Contact button** in Hero section uses a mailto link
+- General content and structure cleanup
 
 ## Development Notes
 
@@ -120,3 +94,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Contact
 
 Feel free to reach out if you have any questions or suggestions!
+
+**Email:** [fiazmushfeq01@gmail.com](mailto:fiazmushfeq01@gmail.com)
