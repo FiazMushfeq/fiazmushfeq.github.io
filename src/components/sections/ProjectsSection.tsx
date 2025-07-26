@@ -18,8 +18,7 @@ const ProjectsSection = () => {
       title: "Expense Tracker",
       description: "A full-stack expense tracking application built with Flutter frontend and Python gRPC backend, using PostgreSQL for data persistence",
       technologies: ["Dart", "C++", "Python", "Swift", "CMake", "Shell"],
-      githubUrl: "https://github.com/FiazMushfeq/Expense-Tracker",
-      liveUrl: "https://fiazmushfeq.github.io/Expense-Tracker/"
+      githubUrl: "https://github.com/FiazMushfeq/Expense-Tracker"
     }
   ];
 
@@ -60,14 +59,16 @@ const ProjectsSection = () => {
                     <Github className="mr-2 h-4 w-4" />
                     Code
                   </Button>
-                  <Button 
-                    size="sm" 
-                    className="flex-1 bg-primary hover:bg-primary/90"
-                    onClick={() => window.open(project.liveUrl, '_blank')}
-                  >
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
-                  </Button>
+                  {project.liveUrl && (
+                    <Button 
+                      size="sm" 
+                      className="flex-1 bg-primary hover:bg-primary/90"
+                      onClick={() => window.open(project.liveUrl, '_blank')}
+                    >
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      {project.title === "Personal Site" ? "Website" : "Not Found"}
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
