@@ -1,4 +1,4 @@
-# Personal Portfolio Website
+# Personal Portfolio
 
 A modern, responsive portfolio website showcasing my professional experience, skills, and projects.
 
@@ -41,13 +41,28 @@ npm run preview    # Preview production build
 
 ### GitHub Pages
 
-This project is configured for automatic deployment to GitHub Pages.
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
 
-1. **Manual Deployment**
+- **Automatic Deployment:**  
+  When you push changes to the main branch, GitHub Actions will build and deploy the site to the `gh-pages` branch.  
+  The website will be available at (unless added to Personal Portfolio):  
+  `https://<your-github-username>.github.io/personal-website/`
 
-   ```bash
-   npm run deploy
-   ```
+- **Manual Deployment:**  
+  You can also deploy manually by running:
+  ```bash
+  npm run deploy
+  ```
+
+#### Setting Up GitHub Pages
+
+1. Go to your repository’s **Settings** → **Pages**.
+2. Set the source to the `gh-pages` branch and root (`/`) folder.
+3. Save your changes.
+
+#### Custom Domain (Optional)
+
+- Enter your domain under "Custom domain" in the Pages settings.
 
 ## Project Structure
 
@@ -61,35 +76,6 @@ src/
 ├── lib/                # Utility functions
 └── pages/              # Page components
 ```
-
-## Features
-
-- 🎨 Modern, responsive design
-- 🌙 Professional dark theme
-- 📱 Mobile-first approach
-- ⚡ Fast loading with Vite
-- 🎯 SEO optimized
-- 🚀 GitHub Pages deployment ready
-- 💫 Smooth animations and transitions
-
-## Recent Changes
-
-- **Projects section** now appears above Experience
-- **Navigation** order updated to reflect Projects before Experience
-- **Education section** lists relevant coursework under Rutgers University
-- **Contact button** in Hero section uses a mailto link
-- General content and structure cleanup
-
-## Development Notes
-
-- Uses HashRouter for GitHub Pages compatibility
-- Configured with proper base path for deployment
-- Includes 404 handling for SPA routing
-- Optimized build process with automatic deployment
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## Contact
 
